@@ -1,0 +1,113 @@
+
+* {         /*      Reset     */
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #070707;   /*      Fondo oscuro     */
+}
+
+h1{
+    font-family: "Lora", serif;
+    background-color: #8c162a;
+    color: aliceblue;
+
+    height: 5vh;
+    font-size: 2vh;
+    padding: 1vh;
+
+    position: sticky; /* Se mantiene visible al hacer scroll */
+    top: 0;
+    text-align: center;
+}
+
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;  /* Separación entre elementos */
+    padding: 1vh 2vw;
+}
+
+
+
+section {   /* Clase común para todas las secciones */
+    height: 32%;
+    border-radius: 1em;
+    border: #070707 solid 1px;
+    
+    background-color: aliceblue;
+    padding: .2em;
+
+    position: sticky;
+    display: flex;
+}
+
+/* Clases para las posiciones de las secciones */
+    #section1{top:6vh;}
+    #section2{top:8vh;}
+    #section3{top:10vh;}
+    #section4{top:12vh;}
+    #section5{top:14vh;}
+    #section6{top:16vh;}
+    #section7{top:18vh;}
+    #section8{top:20vh;}
+    #section9{top:22vh;}
+    #section10{top:24vh;}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+
+/*    Responsive                   */
+
+/* Para pantallas medianas */
+@media all and (min-width:442px)  {
+    main{
+        padding: 1vh 0;
+    }
+    section {
+        width: 88vw;
+        margin: auto;
+    }
+}
+
+/* Para pantallas grandes */
+
+@media all and (min-width:800px)  {
+    h1{
+        height: 7vh;
+        font-size: 3vh;
+    }
+    section {
+        height: 73vh;
+        width: 80vw; 
+    }
+
+    /* Ajuste de posición y márgenes de las secciones */
+    #section1 { top: 8vh; margin-left: 14vw; }
+    #section2 { top: 10vh; margin-left: 13vw; }
+    #section3 { top: 12vh; margin-left: 12vw; }
+    #section4 { top: 14vh; margin-left: 11vw; }
+    #section5 { top: 16vh; margin-left: 10vw; }
+    #section6 { top: 18vh; margin-left: 9vw; }
+    #section7 { top: 20vh; margin-left: 8vw; }
+    #section8 { top: 22vh; margin-left: 7vw; }
+    #section9 { top: 24vh; margin-left: 6vw; }
+    #section10 { top: 26vh; margin-left: 5vw; }
+}
+
+/* Para pantallas extra grandes */
+@media all and (min-width:1200px)  {
+    main{
+        gap: 20px; /* Aumenta espacio entre elementos */
+    }
+}
