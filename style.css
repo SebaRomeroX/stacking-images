@@ -12,12 +12,11 @@ body {
 
 h1{
     font-family: "Lora", serif;
-    background-color: #8c162a;
+    background-color: #1a0f55;
     color: aliceblue;
 
     height: 5vh;
-    font-size: 2vh;
-    padding: 1vh;
+    font-size: 4vh;
 
     position: sticky; /* Se mantiene visible al hacer scroll */
     top: 0;
@@ -85,7 +84,8 @@ img{
 @media all and (min-width:800px)  {
     h1{
         height: 7vh;
-        font-size: 3vh;
+        font-size: 4vh;
+        padding: 1vh;
     }
     section {
         height: 73vh;
